@@ -8,6 +8,7 @@ body {
 .container {
     max-height: 100vh;
     overflow: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .item {
@@ -19,9 +20,14 @@ body {
     align-items: center;    
     height: 100vh;
     font-size: 6vw;
+    scroll-snap-align: center;
 }
 
 .item:nth-child(odd) {
     background: #2b2b2b;
+}
+
+.item:last-child {
+    border: none;
 }
 
